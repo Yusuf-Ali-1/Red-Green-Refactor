@@ -1,0 +1,155 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3 py-4">
+			<!-- MESSAGES -->
+			<div class="card h-25">
+				<home-messages></home-messages>
+			</div>
+
+			<!-- ACTIVITY FEEDS -->
+			<div class="card">
+				<button class="btn btn-activity text-white text-capitalize text-left py-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Activity Feed <span class="fa fa-caret-down float-right"></span>
+				</button>
+				
+				<home-activity-feed></home-activity-feed>
+			</div>
+			<br>
+			<div class="card px-3 ">
+				<div class="row">
+					<div class="col-md-4 text-center pt-5">
+						<span class="fa fa-shopping-cart text-info follower"></span><br>
+						<small class="text-muted">ORDERS</small>
+						<h6 class="text-info">211</h6><br>
+						<button class="btn btn-block btn-activity text-white btn-sm">
+							Day
+						</button>
+
+						<button class="btn btn-block btn-activity text-white btn-sm">
+							Week
+						</button>
+
+						<button class="btn btn-block btn-activity text-white btn-sm">
+							Month
+						</button>
+					</div>
+					<div class="col-md-8 pt-5">
+						<table class="table table-hover">
+							<tbody>
+								<tr>
+									<td>Completed Orders</td>
+									<td><small class="text-info">194</small></td>
+								</tr>
+								<tr>
+									<td>Completed Orders (Licenced)</td>
+									<td><small class="text-info">194</small></td>
+								</tr>
+								<tr>
+									<td>Abandoned Carts</td>
+									<td><small class="text-info">194</small></td>
+								</tr>
+								<tr>
+									<td>% of NLA that made purchase</td>
+									<td><small class="text-info">194</small></td>
+								</tr>
+								<tr>
+									<td>New Licenced Accounts</td>
+									<td><small class="text-info">194</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<div class="col-md-9">
+			<div class="row">
+				<div class="col-md-12 pb-3 pt-4">
+					<div class="card bg-gradient-navbar-same bg-img py-5" style="background-image: url(/assets/images/top_banner.jpg);">
+
+						<span class="mt-5 content"><h3 class="text-white pl-4 pt-2">Dashboard | Main</h3></span>
+						
+					</div>
+				</div>
+
+				<!-- Statistics -->
+				<div class="col-md-3 py-2">
+					<div class="card pt-2">
+						<div class="media px-4">
+						  <span class="fa fa-user pt-2 mr-3 text-info follower"></span>
+						  <div class="media-body">
+						    <small class="mt-0 text-primary">Followers</small>
+						    <span class="mt-1 text-muted info-text-right float-right"> 98 New followers </span>
+						    <span class="mt-1 text-muted info-text-right float-right"> 
+						    125 New friends </span>
+						    <h5 class="text-info">2,500</h5>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 py-2">
+					<div class="card pt-2">
+						<div class="media px-4">
+						  <span class="fa fa-heart pt-2 mr-3 text-danger follower"></span>
+						  <div class="media-body">
+						    <small class="mt-0 text-primary">Likes</small>
+						    <span class="mt-1 text-muted info-text-right float-right"> 
+						    1,325 New likes </span>
+						    <h5 class="text-danger">5,905</h5>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 py-2">
+					<div class="card pt-2">
+						<div class="media px-4">
+						  <span class="fa fa-comments pt-2 mr-3 text-success follower"></span>
+						  <div class="media-body">
+						    <small class="mt-0 text-primary">Comments</small>
+						    <span class="mt-1 text-muted info-text-right float-right"> 
+						    175 New comments </span>
+						    <h5 class="text-success">460</h5>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 py-2">
+					<div class="card pt-2">
+						<div class="media px-4">
+						  <span class="fa fa-paste pt-2 mr-3 text-primary follower"></span>
+						  <div class="media-body">
+						    <small class="mt-0 text-primary">Posts</small>
+						    <span class="mt-1 text-muted info-text-right float-right"> 
+						    10 New posts </span>
+						    <h5 class="text-primary">145</h5>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 py-4">
+					<div class=" card py-4">
+						<p-chart type="line" [data]="data"></p-chart>
+					</div>
+				</div>
+
+				<div class="col-md-6 py-">
+					<div class=" card py-4">
+						<p-chart type="bar" [data]="data2"></p-chart>
+					</div>
+				</div>
+
+				<div class="col-md-6 py-">
+					<div class=" card py-4">
+						<p-chart type="radar" [data]="data3"></p-chart>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
